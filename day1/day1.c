@@ -11,6 +11,12 @@ int main(int argc, char *argv[])
 
     FILE *input = fopen(argv[1], "r");
 
+   if (input == NULL)
+    {
+        printf("Error opening file %s\n", argv[1]);
+        return 1;
+    }
+    
     char c = 0;
     int sum = 0;
     int firstDigit = -1;

@@ -1,0 +1,5 @@
+# ignore folder that ends in .dSYM and its contents
+*.dSYM/
+
+# ignore all .out files
+*.out
